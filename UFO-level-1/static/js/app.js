@@ -1,7 +1,7 @@
 //Level 1: Automatic Table and Date Search (Required)
 
 // from data.js
-var tableData = data;
+var table_data = data;
 
 // YOUR CODE HERE!
 // Reference Table Body
@@ -20,7 +20,7 @@ function table(dataSet){
 };
 
 //Call function for data.js
-table(tableData)
+table(table_data)
 
 
   // Button
@@ -41,12 +41,12 @@ function runEnter() {
     console.log(input_value);
 
     // Filter Table Data
-    var filteredData = tableData.filter(ufo => ufo.datetime === input_value); 
+    var filtered_data = table_data.filter(ufo => ufo.datetime === input_value); 
 
     // Log Filtered Data
-    console.log(filteredData);
+    console.log(filtered_data);
 
-    // Call Function with Parameter FilteredData
-    table(filteredData);
+    // Call Function with Parameter filtered_data
+    table(filtered_data);
 
   };
